@@ -61,6 +61,8 @@ public class ArrayListMethods1 {
         employees.add("Hulya");
         employees.add("Kaloyan");
 
+
+
         System.out.println(employees);
 
         employees.remove(0);

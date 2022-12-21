@@ -1,5 +1,6 @@
 package day20_Arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class ArraysPractice {
@@ -20,6 +21,24 @@ public class ArraysPractice {
         scores[3] = 75;
         scores[0] = 65;
         scores[2] = 55;
+
+        ArrayList<Integer> nums=new ArrayList<>();
+        for (int score : scores) {
+            nums.add(score);
+        }
+        System.out.println(nums);
+        nums.add(45);
+        nums.add(2,25);
+        System.out.println("nums"+nums);
+
+        int[] num1=new int[nums.size()];
+        int k =0;
+        for (Integer num : nums) {
+            num1[k++]=num;
+        }
+
+        System.out.println("num1"+Arrays.toString(num1));
+
 
         System.out.println( Arrays.toString(scores)); //[65, 85, 55, 75, 95]
 
