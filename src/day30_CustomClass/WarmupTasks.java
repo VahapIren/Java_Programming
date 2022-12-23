@@ -68,6 +68,12 @@ public class WarmupTasks {
         System.out.println("-----------------------------------------------------------");
 
         String str = "ABCD123$%#@&456EFG!";
+        char[] str1=str.toCharArray();
+        Character[] charss=new Character[str.length()];
+        int k=0;
+        for (char c : str1) {
+            charss[k++]=c;
+        }
 
         ArrayList<Character> chars = new ArrayList<>();
 
@@ -75,7 +81,7 @@ public class WarmupTasks {
             chars.add( str.charAt(i) );
         }
 
-        ArrayList<Character> letters = new ArrayList<>( chars ); // add all the characters
+        ArrayList<Character> letters = new ArrayList<>(chars); // add all the characters
 
         letters.removeIf( p -> !Character.isLetter(p)  ) ; //remove the characters that are not letters
 

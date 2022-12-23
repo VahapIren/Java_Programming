@@ -14,7 +14,7 @@ public class CarObjects {
 
 
         Car car2 = new Car();
-        car2.setInfo("BMW", "335is", "Black", 2020, 45000);
+        car2.setInfo("BMW", "335is", "Black", 2007, 45000);
 
         System.out.println(car2);
 
@@ -43,7 +43,9 @@ public class CarObjects {
          */
 
         carsList.removeIf( p -> p.brand.equals("BMW") && p.year >= 2005 && p.year <= 2008 );
+        System.out.println(carsList);
         carsList.removeIf( p -> p.brand.equals("Toyota") && p.year >= 1995 && p.year <= 1997);
+        System.out.println(carsList);
 
 
 

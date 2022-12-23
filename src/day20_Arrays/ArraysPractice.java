@@ -21,6 +21,8 @@ public class ArraysPractice {
         scores[3] = 75;
         scores[0] = 65;
         scores[2] = 55;
+        System.out.println( Arrays.toString(scores)); //[65, 85, 55, 75, 95]
+        System.out.println("---------------------------------");
 
         ArrayList<Integer> nums=new ArrayList<>();
         for (int score : scores) {
@@ -40,7 +42,7 @@ public class ArraysPractice {
         System.out.println("num1"+Arrays.toString(num1));
 
 
-        System.out.println( Arrays.toString(scores)); //[65, 85, 55, 75, 95]
+
 
         System.out.println("------------------------------------------");
         String[] months = {"January", "February", "March", "April", "May", "June", "July",
