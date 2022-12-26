@@ -5,30 +5,42 @@ import java.io.FileNotFoundException;
 
 public class DisadvategeOfThrowsKeyword2 {
 
-    public static void method(){
+    public static void method() throws FileNotFoundException, InterruptedException {
         try {
             method1();
-        } catch (FileNotFoundException e) {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
-    }
-    public static void method1() throws FileNotFoundException {
+        method2();
+        method3();
 
-        new FileInputStream("");
+        String str=null;
+        try {
+            System.out.println(str.charAt(0));
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+        }
+
 
     }
-    public static void method2() throws FileNotFoundException {
+    public static void method1() throws InterruptedException {
+
+        //new FileInputStream("");
+        Thread.sleep(2000);
+
+    }
+    public static void method2() throws InterruptedException {
 
         method1();
 
     }
-    public static void method3() throws FileNotFoundException, InterruptedException {
+    public static void method3() throws InterruptedException {
 
         method2();
         Thread.sleep(1000);
 
     }
-    public static void metho4() throws FileNotFoundException, InterruptedException {
+    public static void metho4() throws InterruptedException {
         method3();
     }
 }
