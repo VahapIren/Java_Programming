@@ -12,9 +12,9 @@ public class MultiCatchBlocks {
 
             System.out.println(employee.getSalary()); // Null Pointer Exception
 
-        }catch (NullPointerException e){
-            System.out.println("First Catch Block");
-            e.printStackTrace();
+       // }catch (NullPointerException e){
+         //   System.out.println("First Catch Block");
+           // e.printStackTrace();
         }catch(IndexOutOfBoundsException e){
             System.out.println("Second catch block");
             e.printStackTrace();

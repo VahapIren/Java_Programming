@@ -9,7 +9,7 @@ public class FinallyBlock {
         try {
             System.out.println(arr[10]);
             System.out.println("Try Block");
-        }catch (RuntimeException e){
+        }catch (ArithmeticException e){
             System.out.println("Catch Block");
             e.printStackTrace();
             System.exit(0);

@@ -62,7 +62,7 @@ public class TryCatchBlocks {
             e.printStackTrace();
         }
 
-        System.out.println("Test3 started");
+        System.out.println("Test3 completed");
 
 
         System.out.println("--------------------------------------------------");

@@ -6,7 +6,7 @@ public class EmployeeObjects {
 
         Employee employee1 = new Employee("Aaron");
 
-        Employee employee2 = new Employee("Yuliya", 'F');
+        Employee employee2 = new Employee("Yuliya",'F');
 
         Employee employee3 = new Employee("Olga", 'F', "SDET");
 
