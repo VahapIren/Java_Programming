@@ -27,6 +27,8 @@ public class StringMethod4 {
 
         System.out.println( (name +" ").repeat(5)   );
 
+        String xxx=" ";
+        System.out.println(xxx.isEmpty());
 
 
 
